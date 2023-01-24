@@ -1,0 +1,50 @@
+.nav {
+  font-size: 34px;
+}
+.main {
+  margin: 0 auto 0 auto;
+  height: 400px;
+  width: 100%;
+}
+/*文字*/
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+ul {
+  font-size: 18px;
+}
+p {
+  font-size: 18px;
+}
+
+.aboutpng {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.abouting {
+  display: flex;
+}
+
+/*work*/
+.work {
+  margin: 80px auto 80px auto;
+  width: 100%;
+}
+.working {
+  width: 100px;
+  display: flex;
+}
+.work1 {
+  margin: 20px;
+}
+.work2 {
+  margin: 20px;
+}
+.work3 {
+  margin: 20px;
+}
