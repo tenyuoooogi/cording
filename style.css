@@ -8,13 +8,12 @@
 }
 .menu {
   display: flex;
-  max-width: 960px;
+  flex-wrap: wrap;
 }
 .main {
   margin: 0 auto 0 auto;
   height: 400px;
   width: 100%;
-  max-width: 960px;
 }
 /*文字*/
 h1 {
@@ -38,6 +37,7 @@ p {
 }
 .about {
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .aboutpng {
@@ -49,24 +49,58 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 960px;
 }
 
 /*work*/
 .work {
-  margin: 80px auto 80px auto;
-  width: 100%;
 }
+
 .working {
-  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
+.flexbox {
+  display: flex;
+}
 .work1 {
-  margin: auto;
+  width: 500px;
   max-width: 25%;
+  margin: 0 20px;
 }
 
-body {
-  max-width: 960px;
+.working img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.work2 {
+  width: 500px;
+  max-width: 25%;
+  margin: 0 20px;
+}
+.work3 {
+  width: 500px;
+  max-width: 25%;
+  margin: 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .flexbox {
+    display: block;
+  }
+  .flexbox.work1 {
+    width: 100%;
+    text-align: center;
+  }
+  .flexbox.work2 {
+    width: 100%;
+    text-align: center;
+  }
+  .flexbox.work3 {
+    width: 100%;
+    text-align: center;
+  }
 }
