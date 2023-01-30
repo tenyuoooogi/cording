@@ -5,15 +5,29 @@
 .nav {
   font-size: 34px;
   margin-left: 25%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
+
 .menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
+
 .main {
   margin: 0 auto 0 auto;
-  height: 400px;
+
   width: 100%;
+}
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.profile {
+  border: 1px solid black;
 }
 /*文字*/
 h1 {
@@ -37,7 +51,7 @@ p {
 }
 .about {
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .aboutpng {
@@ -53,6 +67,7 @@ p {
 
 /*work*/
 .work {
+  text-align: center;
 }
 
 .working {
@@ -66,41 +81,43 @@ p {
   display: flex;
 }
 .work1 {
-  width: 500px;
+  width: 100%;
   max-width: 25%;
-  margin: 0 20px;
+  margin: 0 75px 0 20px;
 }
 
-.working img {
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-  margin: 0 auto;
-}
 .work2 {
-  width: 500px;
+  width: 100%;
   max-width: 25%;
   margin: 0 20px;
 }
 .work3 {
-  width: 500px;
+  width: 100%;
   max-width: 25%;
-  margin: 0 20px;
+  margin: 0 20px 0 75px;
+}
+.working img {
+  height: auto;
+
+  margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
   .flexbox {
     display: block;
   }
-  .flexbox.work1 {
+  .work1 {
     width: 100%;
-    text-align: center;
+    margin: 0 190px 0 204px;
   }
-  .flexbox.work2 {
+  .work2 {
     width: 100%;
-    text-align: center;
+    margin: 0 204px 0 204px;
   }
-  .flexbox.work3 {
+  .work3 {
     width: 100%;
-    text-align: center;
+    margin: 0 204px 0 204px;
+  }
+  .work p {
+    width: 358px;
   }
 }
